@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+              <!--(((((((((((Font-awesome-icon-style-link))))))))))))  -->
+              <script src="https://kit.fontawesome.com/6cab9874b2.js" crossorigin="anonymous"></script>
+              <!--(((((((((((((((((Font-awesome-icon-style-link)))))))))))))))))  -->
+
+                <!-- ..............Own css.............. -->
+                  <link rel="stylesheet" href="style.css">
+                <!-- ..............Own css.............. -->
+
+                
+                
+                <!-- ///////////Bootstrap cdn link\\\\\\\\\\ -->
+                <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+                <!-- ///////////Bootstrap cdn link\\\\\\\\\\ -->
+                
+      <style>
+        a{
+          text-decoration: none;
+          color: black;
+          padding-right: 5px;
+          padding-left: 5px;
+        }
+      </style>
+                
+              </head>
+<body data-bs-spy="scroll" data-bs-target=".navbar"data-bs-offset="100">
+
+   
+                  <!--********Navigation part start******  -->
+
+                  <nav class="navbar navbar-expand-lg fixed-top navigation-wrap" style="background-color: #F9F2E6;">
+                    <div class="container-fluid">
+                      <a class="navbar-brand" href="index.html">
+                        <img class="nav-img" src="./Pizza-images/images/bg/image copy 9.png" alt="">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                          <li class="nav-item pe-3">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item pe-3">
+                            <a class="nav-link " aria-current="page" href="foodMenu.html">Food-Menu</a>
+                          </li>
+                          <li class="nav-item pe-3">
+                            <a class="nav-link " aria-current="page" href="tiffinService.html">Tiffin-Service</a>
+                          </li>
+                          <li class="nav-item pe-3">
+                            <a class="nav-link " href="about.html">About-Us</a>
+                          </li>
+                      
+                          <li class="nav-item pe-3">
+                            <a class="nav-link" href="review.html">Review</a>
+                          </li>
+                          <li class="nav-item pe-3">
+                            
+
+                              <a class="nav-link" href="cart.html">Cart 
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            
+                            </a>
+                          </li>
+
+                          <li class="nav-item pe-3">
+                            <a href="loginpage.html">
+                              <button class="nav-btn" >Account</button>
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                  
+                  <!--********Navigation part End********  -->
+                  <div class="container-fluid my-5 py-5 w-100 " style="height: 40px; height: auto;  background-color: #F9F2E6;">
+                    <h1 class="text-dark d-flex justify-content-center display-3" style="font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Select Your Combo Package</h1>
+                    <p class="text-center"><small>Symphony of flavors, carefully curated to tantalize your taste & satisfy cravings meets unparalleled hospitality. </small> </p>
+                    <hr class="container">
+                    <div class="d-flex justify-content-center">
+                      <a href="index.html">Home</a> <small>></small> <a href="foodMenu.html">Food-Menu</a> <small>></small> <a href="combo.html">Combo-package</a>
+
+                    </div>
+                  </div>
+
+                  <!-- <h2 class="text-center text-success">Select Your Combo Package </h2> -->
+
+
+                  <section class="">
+                    <section  class="my-5">
+
+                      
+                        <div class="container ">
+                        <div class="row mx-auto ">
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card rounded-4  p-3 mb-5 rounded boxx" style="background-color: #F9F2E6;">
+                              <div class="scaless">
+                      
+                                <img class="img-fluid  rounded-4" src="./Pizza-images/images/img/mix-single-platter-grill.jpg" alt="">
+                              </div>
+                              <div class="card-body">
+                                <div class="card-title">
+                                  <p class="fw-bold text-dark">Mix Signle Platter</p>
+                                  <p><small>Fried Rice with potato Fry ,  2pcs prawn  </small></p>
+                                  <div class="row">
+                                    <div class="col-12 col-lg-6">
+                                      <p><small>Price : <span id="priceFstPlatter">290</span>  Tk</small></p>
+
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6">
+                                      <p><small>Total Price : <span id="priceFstPlatterAll">0</span> Tk </small></p>
+
+                                    </div>
+                                  </div>
+                                  
+                                  <p><small>Quantity: </small></p>     
+
+                         
+                                    <!-- Order section start -->
+                                  
+                                     <button style=" margin-right: 20px; border-radius: 100%;  border: 0px transparent none;">
+                                      <b id="minIcrementFstPlatter" style="font-size: 1.5rem;"> 
+                                        <i class="fa-sharp fa-solid fa-circle-minus" style="color: #921c1c;"></i>
+                                      </b>
+                                    </button >
+
+                                    <span id="fstPlatter" style="color: black; margin-left: 2px; "> 0</span>
+                                    
+                                    
+                                    
+                                    <button style=" margin-left: 20px; border-radius: 100%; border: 0px transparent none;">
+                                      
+                                      <b id="plusFstPlatter" style="font-size: 1.5rem;">
+                                        <i class="fa-solid fa-circle-plus" style="color: #a32e2e;"></i>
+                                      </b>
+                                    </button>
+
+                                    <!-- Order section end  -->
+                                    
+                                  
+                                    
+                                </div>
+                                
+                                  <pre id="preeetag" style="display: block;"></pre>
+                                  <button class="main-btn w-100" style="display: none;"  id="fstPlatterBtn">Buy</button>
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card rounded-4  p-3 mb-5 rounded boxx" style="background-color: #F9F2E6;">
+                              <div class="scaless">
+                              <img class="img-fluid rounded-4" src="./Pizza-images/images/img/image copy 26.png" alt="">
+                              </div>
+                              <div class="card-body">
+                                <div class="card-title">
+                                  <p class="fw-bold">Bengali Style Platter </p>
+                                  <p><small>Sweet Fried Rice with Mutton Curry</small></p>
+                                  <div class="row">
+                                    <div class="col-12 col-lg-6 col-md-6">
+                                      <p><small>Price : <span id="priceSecPlatter">550</span>  Tk</small></p>
+
+                                    </div>
+                                    <div class="col-12 col-lg-6 col-md-6">
+                                      <p><small>Total Price : <span id="priceSecPlatterAll">0</span> Tk </small></p>
+
+                                    </div>
+                                  </div>
+                                  <p><small>Quantity: </small></p>     
+
+                              
+                                  <!-- Buy Section Start Second platter -->
+                                  <button style=" margin-right: 20px; border-radius: 100%;  border: 0px transparent none;">
+                                    <b id="minIcrementSecPlatter" style="font-size: 1.5rem;"> 
+                                      <i class="fa-sharp fa-solid fa-circle-minus" style="color: #921c1c;"></i>
+                                    </b>
+
+                                  </button >
+
+                                  <span id="secPlatter" style="color: black; margin-left: 2px; "> 0</span>
+                                  
+                                  
+                                  
+                                  <button style=" margin-left: 20px; border-radius: 100%; border: 0px transparent none;">
+                                    
+                                    <b id="plusSecPlatter" style="font-size: 1.5rem;">
+                                      <i class="fa-solid fa-circle-plus" style="color: #a32e2e;"></i>
+                                    </b>
+                                  </button>
+                                  <!-- Buy section End Second Platter -->
+
+                                </div>
+                                <pre id="preeetagSEC" style="display: block;"></pre>
+                                <button class="main-btn w-100" style="display: none;"  id="SecPlatterBtn">Buy</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card rounded-4  p-3 mb-5 rounded boxx" style="background-color: #F9F2E6;">
+                              <div class="scaless">
+                      
+                                <img class="img-fluid rounded-4" src="./Pizza-images/images/img/image copy 27.png" alt="">
+                              </div>
+                              <div class="card-body">
+                                <div class="card-title">
+                                  <p class="fw-bold">Single Platter</p>
+                                  <p><small>Fried Rice with Mutton and Doi</small></p>
+                                  <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+
+                                      <p><small>Price : <span id="thrdPlatterPrice">500</span>  tk</small></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                      <p><small>Total Price: <span id="ThirdTotalPlater">0</span>Tk</small></p>
+                                    </div>
+                                  </div>
+
+                                  <p><small>Quantity: </small></p>     
+
+
+                                     <!-- Order section start 3 -->
+                                  
+                                     <button style=" margin-right: 20px; border-radius: 100%;  border: 0px transparent none;">
+                                      <b id="minIcrementThrdPlatter" style="font-size: 1.5rem;"> 
+                                        <i class="fa-sharp fa-solid fa-circle-minus" style="color: #921c1c;"></i>
+                                      </b>
+                                    </button >
+
+                                    <span id="ThrdPlatterCnt" style="color: black; margin-left: 2px; "> 0</span>
+                                    
+                                    
+                                    
+                                    <button style=" margin-left: 20px; border-radius: 100%; border: 0px transparent none;">
+                                      
+                                      <b id="plusThrdPlatter" style="font-size: 1.5rem;">
+                                        <i class="fa-solid fa-circle-plus" style="color: #a32e2e;"></i>
+                                      </b>
+                                    </button>
+
+                                    <!-- Order section end 3  -->
+                                  
+                                  </div>
+                                  <pre id="preeetag3" style="display: block;"></pre>
+                                  <button class="main-btn w-100" style="display: none;"  id="thrdPlatterBtn">Buy</button>
+                              </div>
+                            </div>
+                          </div>
+
+
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card rounded-4  p-3 mb-5 rounded boxx" style="background-color: #F9F2E6;">
+                              <div class="scaless">
+                      
+                                <img class="img-fluid rounded-4" src="./Pizza-images/images/img/image copy 13.png" alt="">
+                              </div>
+                              <div class="card-body">
+                                <div class="card-title">
+                                  <p class="fw-bold">Chicken Tikka</p>
+                                  <p><small>Two pcs chicken stick , Fried Rice And Fish Fry</small></p>
+                                 
+
+                                  <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+
+                                      <p><small>Price : <span id="frthPlatterPrice">1750</span>  tk</small></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                      <p><small>Total Price: <span id="frthTotalPlater">0</span>Tk</small></p>
+                                    </div>
+                                  </div>
+
+                                  <p><small>Quantity: </small></p>     
+                                     <!-- Order section start 4 start -->
+                                  
+                                     <button style=" margin-right: 20px; border-radius: 100%;  border: 0px transparent none;">
+                                      <b id="minIcrementfrthPlatter" style="font-size: 1.5rem;"> 
+                                        <i class="fa-sharp fa-solid fa-circle-minus" style="color: #921c1c;"></i>
+                                      </b>
+                                    </button >
+
+                                    <span id="frthPlattercnt" style="color: black; margin-left: 2px; "> 0</span>
+                                    
+                                    
+                                    
+                                    <button style=" margin-left: 20px; border-radius: 100%; border: 0px transparent none;">
+                                      
+                                      <b id="plusFrthPlatter" style="font-size: 1.5rem;">
+                                        <i class="fa-solid fa-circle-plus" style="color: #a32e2e;"></i>
+                                      </b>
+                                    </button>
+
+                                    <!-- Order section 4 end  -->
+                                </div>
+                                <pre id="preeetagfrth" style="display: block;"></pre>
+                                  <button class="main-btn w-100" style="display: none;"  id="frtPlatterBtn">Buy</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card rounded-4  p-3 mb-5 rounded boxx" style="background-color: #F9F2E6;">
+                              <div class="scaless">
+                      
+                                <img class="img-fluid rounded-4" src="./Pizza-images/images/img/image copy 14.png" alt="">
+                              </div>
+                              <div class="card-body">
+                                <div class="card-title">
+                                  <p class="fw-bold">Chicken with Fried Rice</p>
+                                  <p><small>Four pcs Chicken , Vegetable and Fish Curry </small></p>
+                                  
+                                  <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+
+                                      <p><small>Price : <span id="fifthPlatterPrice">1750</span>  tk</small></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                      <p><small>Total Price: <span id="fifthTotalPlater">0</span>Tk</small></p>
+                                    </div>
+                                  </div>
+                                  <p><small>Quantity: </small></p>     
+
+                                  <!-- Order section 5 start -->
+                                  
+                                  <button style=" margin-right: 20px; border-radius: 100%;  border: 0px transparent none;">
+                                    <b id="minIcrementFifPlatter" style="font-size: 1.5rem;"> 
+                                      <i class="fa-sharp fa-solid fa-circle-minus" style="color: #921c1c;"></i>
+                                    </b>
+                                  </button >
+
+                                  <span id="fifPlattercnt" style="color: black; margin-left: 2px; "> 0</span>
+
+                                  <button style=" margin-left: 20px; border-radius: 100%; border: 0px transparent none;">
+                                    
+                                    <b id="plusFifPlatter" style="font-size: 1.5rem;">
+                                      <i class="fa-solid fa-circle-plus" style="color: #a32e2e;"></i>
+                                    </b>
+                                  </button>
+
+                                  <!-- Order section 5 end  -->
+                                </div>
+                                <pre id="preeetagfif" style="display: block;"></pre>
+                                  <button class="main-btn w-100" style="display: none;"  id="fifPlatterBtn">Buy</button>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card rounded-4  p-3 mb-5  rounded boxx" style="background-color: #F9F2E6;">
+                              <div class="scaless">
+                      
+                                <img class="img-fluid rounded-4" src="./Pizza-images/images/img/image copy 16.png" alt="">
+                              </div>
+                              <div class="card-body">
+                                <div class="card-title">
+                                  <p class="fw-bold">All in One</p>
+                                  <p><small>4pcs ruti , Chicken Biriyani , Vegetable, sweet  </small></p>
+                                  <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+
+                                      <p><small>Price : <span id="sixPlatterPrice">2150</span>  tk</small></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                      <p><small>Total Price: <span id="sixTotalPlater">0</span>Tk</small></p>
+                                    </div>
+                                  </div>
+
+
+                                  <p><small>Quantity: </small></p>     
+                                  <!-- Order section start 6 -->
+                                  
+                                  <button style=" margin-right: 20px; border-radius: 100%;  border: 0px transparent none;">
+                                    <b id="minIcrementsixPlatter" style="font-size: 1.5rem;"> 
+                                      <i class="fa-sharp fa-solid fa-circle-minus" style="color: #921c1c;"></i>
+                                    </b>
+                                  </button >
+
+                                  <span id="sixPlattercnt" style="color: black; margin-left: 2px; "> 0</span>
+                                  
+                                  
+                                  
+                                  <button style=" margin-left: 20px; border-radius: 100%; border: 0px transparent none;">
+                                    
+                                    <b id="plusixPlatter" style="font-size: 1.5rem;">
+                                      <i class="fa-solid fa-circle-plus" style="color: #a32e2e;"></i>
+                                    </b>
+                                  </button>
+
+                                  <!-- Order section 6 end  -->
+                                  
+                                </div>
+                                <pre id="preeetagsix" style="display: block;"></pre>
+                                <button class="main-btn w-100" style="display: none;"  id="sixPlatterBtn">Buy</button>
+                              </div>
+                            </div>
+                          </div>
+                      
+                      
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card rounded-4  p-3 mb-5  rounded boxx" style="background-color: #F9F2E6;">
+                              <div class="scaless">
+                      
+                                <img class="img-fluid  rounded-4" src="./Pizza-images/images/img/image copy 10.png" alt="">
+                              </div>
+                              <div class="card-body">
+                                <div class="card-title">
+                                  <p class="fw-bold text-dark">Fried Rice</p>
+                                  <p><small>Vegetable Fried Rice with paneer</small></p>
+                                  <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+
+                                      <p><small>Price : <span id="sevPlatterPrice">250</span>  tk</small></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                      <p><small>Total Price: <span id="sevTotalPlater">0</span>Tk</small></p>
+                                    </div>
+                                  </div>
+
+                                  <p><small>Quantity: </small></p>     
+
+                                  <!-- Order section 7 start -->
+                                  
+                                  <button style=" margin-right: 20px; border-radius: 100%;  border: 0px transparent none;">
+                                    <b id="minIcrementsevPlatter" style="font-size: 1.5rem;"> 
+                                      <i class="fa-sharp fa-solid fa-circle-minus" style="color: #921c1c;"></i>
+                                    </b>
+                                  </button >
+
+                                  <span id="sevPlattercnt" style="color: black; margin-left: 2px; "> 0</span>
+                                  
+                                  
+                                  
+                                  <button style=" margin-left: 20px; border-radius: 100%; border: 0px transparent none;">
+                                    
+                                    <b id="plussevPlatter" style="font-size: 1.5rem;">
+                                      <i class="fa-solid fa-circle-plus" style="color: #a32e2e;"></i>
+                                    </b>
+                                  </button>
+
+                                  <!-- Order 7 section end  -->
+
+                                  
+                                </div>
+                                
+                                <pre id="preeetagsev" style="display: block;"></pre>
+                                <button class="main-btn w-100" style="display: none;"  id="sevPlatterBtn">Buy</button>
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card rounded-4  p-3 mb-5 rounded boxx" style="background-color: #F9F2E6;">
+                              <div class="scaless">
+                              <img class="img-fluid rounded-4" src="./Pizza-images/images/img/image copy 11.png" alt="">
+                              </div>
+                              <div class="card-body">
+                                <div class="card-title">
+                                  <p class="fw-bold">Platter</p>
+
+                                  <p><small>Fried Rice with chicken Tikka, Egg and Vegetable </small></p>
+                                  <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+
+                                      <p><small>Price : <span id="eightPlatterPrice">380</span>  tk</small></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                      <p><small>Total Price: <span id="eightTotalPlater">0</span>Tk</small></p>
+                                    </div>
+                                  </div>
+                                  <p><small>Quantity: </small></p>     
+
+                                     <!-- Order section start -->
+                                  
+                                     <button style=" margin-right: 20px; border-radius: 100%;  border: 0px transparent none;">
+                                      <b id="minIcrementeightPlatter" style="font-size: 1.5rem;"> 
+                                        <i class="fa-sharp fa-solid fa-circle-minus" style="color: #921c1c;"></i>
+                                      </b>
+                                    </button >
+  
+                                    <span id="eightPlattercnt" style="color: black; margin-left: 2px; "> 0</span>
+                                    
+                                    
+                                    
+                                    <button style=" margin-left: 20px; border-radius: 100%; border: 0px transparent none;">
+                                      
+                                      <b id="pluseightPlatter" style="font-size: 1.5rem;">
+                                        <i class="fa-solid fa-circle-plus" style="color: #a32e2e;"></i>
+                                      </b>
+                                    </button>
+  
+                                    <!-- Order section end  -->
+                                </div>
+                                <pre id="eightpreeetag" style="display: block;"></pre>
+                                <button class="main-btn w-100" style="display: none;"  id="eightPlatterBtn">Buy</button>
+                                
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card rounded-4  p-3 mb-5 rounded boxx" style="background-color: #F9F2E6;">
+                              <div class="scaless">
+                      
+                                <img class="img-fluid rounded-4" src="./Pizza-images/images/img/Badshahi-kebab-Platter-1-scaled.jpg" alt="">
+                              </div>
+                              <div class="card-body">
+                                <div class="card-title">
+                                  <p class="fw-bold">Bangladeshi Kabab Platter</p>
+                                  <p><small>Fried Rice , 5pcs Chicken ,3pcs Egg and Fish Fry </small></p>
+                                  <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+
+                                      <p><small>Price : <span id="ninPlatterPrice">1880</span>  tk</small></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                      <p><small>Total Price: <span id="ninTotalPlater">0</span>Tk</small></p>
+                                    </div>
+                                  </div>
+                                  <p><small>Quantity: </small></p>     
+
+                                    <!-- Order section start -->
+                                  
+                                    <button style=" margin-right: 20px; border-radius: 100%;  border: 0px transparent none;">
+                                      <b id="minIcrementninPlatter" style="font-size: 1.5rem;"> 
+                                        <i class="fa-sharp fa-solid fa-circle-minus" style="color: #921c1c;"></i>
+                                      </b>
+                                    </button >
+  
+                                    <span id="ninPlattercnt" style="color: black; margin-left: 2px; "> 0</span>
+                                    
+                                    
+                                    
+                                    <button style=" margin-left: 20px; border-radius: 100%; border: 0px transparent none;">
+                                      
+                                      <b id="plusninPlatter" style="font-size: 1.5rem;">
+                                        <i class="fa-solid fa-circle-plus" style="color: #a32e2e;"></i>
+                                      </b>
+                                    </button>
+  
+                                    <!-- Order section end  -->
+                                  
+                                </div>
+                                <pre id="preeetagnin" style="display: block;"></pre>
+                                <button class="main-btn w-100" style="display: none;"  id="ninPlatterBtn">Buy</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card rounded-4  p-3 mb-5 rounded boxx" style="background-color: #F9F2E6;">
+                              <div class="scaless">
+                      
+                                <img class="img-fluid rounded-4" src="./Pizza-images/images/img/cocunutFishCurryWithWhiteRice.jpg" alt="">
+                              </div>
+                              <div class="card-body">
+                                <div class="card-title">
+                                  <p class="fw-bold">Coconut Fish Curry</p>
+                                  <p><small>Coconut Fish Curry is a vibrant and aromatic dish that combines tender fish fillets with a rich,...
+                                  </small></p>
+                                  <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+
+                                      <p><small>Price : <span id="tnPlatterPrice">480</span>  tk</small></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                      <p><small>Total Price: <span id="tnTotalPlater">0</span>Tk</small></p>
+                                    </div>
+                                  </div>
+                                  <p><small>Quantity: </small></p>     
+
+                                    <!-- Order 10 section start -->
+                                  
+                                    <button style=" margin-right: 20px; border-radius: 100%;  border: 0px transparent none;">
+                                      <b id="minIcrementtnPlatter" style="font-size: 1.5rem;"> 
+                                        <i class="fa-sharp fa-solid fa-circle-minus" style="color: #921c1c;"></i>
+                                      </b>
+                                    </button >
+  
+                                    <span id="tnPlattercnt" style="color: black; margin-left: 2px; "> 0</span>
+                                    
+                                    
+                                    
+                                    <button style=" margin-left: 20px; border-radius: 100%; border: 0px transparent none;">
+                                      
+                                      <b id="plustnPlatter" style="font-size: 1.5rem;">
+                                        <i class="fa-solid fa-circle-plus" style="color: #a32e2e;"></i>
+                                      </b>
+                                    </button>
+  
+                                    <!-- Order section end  -->
+                                  
+                                </div>
+                                <pre id="preeetagtn" style="display: block;"></pre>
+                                <button class="main-btn w-100" style="display: none;"  id="tnPlatterBtn">Buy</button>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-lg-4 col-md-6 col-12 ">
+                            <div class="card rounded-4  p-3 mb-5 rounded boxx" style="background-color: #F9F2E6;">
+                              <div class="scaless">
+                      
+                                <img class="img-fluid rounded-4" src="./Pizza-images/chicken/foodmenu-03.jpg" alt="">
+                              </div>
+                              <div class="card-body">
+                                <div class="card-title">
+                                  <p class="fw-bold">Classic Butter Chicken</p>
+                                  <p><small>Chicken is a beloved Indian dish known for its rich, creamy tomato-based sauce and tender
+                                  </small></p>
+                                  <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-12">
+
+                                      <p><small>Price : <span id="elPlatterPrice">420</span>  tk</small></p>
+                                    </div>
+                                    <div class="col-lg-6 col-md-6 col-12">
+                                      <p><small>Total Price: <span id="elTotalPlater">0</span>Tk</small></p>
+                                    </div>
+                                  </div>
+                                  <p><small>Quantity: </small></p>     
+
+                                    <!-- Order section start -->
+                                  
+                                    <button style=" margin-right: 20px; border-radius: 100%;  border: 0px transparent none;">
+                                      <b id="IcrementelPlatter" style="font-size: 1.5rem;"> 
+                                        <i class="fa-sharp fa-solid fa-circle-minus" style="color: #921c1c;"></i>
+                                      </b>
+                                    </button >
+  
+                                    <span id="elPlattercnt" style="color: black; margin-left: 2px; "> 0</span>
+                                    
+                                    
+                                    
+                                    <button style=" margin-left: 20px; border-radius: 100%; border: 0px transparent none;">
+                                      
+                                      <b id="pluselPlatter" style="font-size: 1.5rem;">
+                                        <i class="fa-solid fa-circle-plus" style="color: #a32e2e;"></i>
+                                      </b>
+                                    </button>
+  
+                                    <!-- Order section end  -->
+                                  
+                                </div>
+                                <pre id="preeetagel" style="display: block;"></pre>
+                                <button class="main-btn w-100" style="display: none;"  id="elPlatterBtn">Buy</button>
+                              </div>
+                            </div>
+                          </div>
+                         
+                        </div>
+                      </div>
+
+                      </section>
+
+                  </section>
+
+            <!-- >>>>>>>>>Footer<<<<<<<<<< -->
+
+   <!-- >>>>>>>Footer<<<<<<<<<< -->
+
+   <footer class="container-fluid" style="box-sizing: border-box; position: sticky; bottom: 0px; width: 100%;">
+    <div class="row bg-dark">
+      
+      <p class="text-center text-light pt-2"> <small>	&#169;2028, PIZZA All rights reserved.</small></p>
+    </div>
+    
+    </footer>
+      <!-- >>>>>>>Footer<<<<<<<<<< -->
+            <!-- >>>>>>>Footer<<<<<<<<<< -->
+
+                           <!--/////// script link \\\\\\\-->
+    <script src="./javascript/comboPackage.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+                           <!--////// script link \\\\\\\\-->
+</body>
+</html>

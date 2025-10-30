@@ -1,0 +1,169 @@
+/* General Styles */
+:root{
+    --primary-color:#ffbc04 ;
+    --secondar-color:#1E8449;
+    --white-color:#FDFEFE;
+    --black-color:#1C2833;
+    --red-color : #ff1504;
+    --secondary-font:  'Quicksand', sans-serif;
+    --primary-font: 'Roboto', sans-serif;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2; /* Light background for contrast */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+
+  
+  /* Form Container */
+
+
+
+
+
+  form {
+    background-color: #F9F2E6;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+    width: 100%;
+    margin: 20px;
+    color: #333;
+  }
+  
+  /* Form Headline */
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #2d572c; /* Matches website's green theme */
+  }
+
+  span{
+    color: red;
+  }
+  
+  
+  /* Table Layout in Form */
+  form table {
+    width: 100%;
+    border-spacing: 10px;
+  }
+  
+  /* Labels */
+  form label {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  /* Input Fields */
+  form input[type="text"],
+  form input[type="email"],
+  form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease;
+  }
+  
+  form input[type="text"]:focus,
+  form input[type="email"]:focus,
+  form input[type="password"]:focus {
+    border-color: #2d572c; /* Green border on focus */
+    outline: none;
+  }
+
+
+  /*
+============
+main-btn start
+=-=-=-=-=-=- 
+ */
+.main-btn{
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    width: fit-content;
+    border: 2px solid var(--primary-color)   ;
+    padding:0.323px 0.893rem ;
+    border-radius: 0.594rem;
+    line-height: 2rem;
+    text-transform: capitalize;
+    transition: all 1s ease-in-out 0s;
+    
+}
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    
+}
+/*
+============
+main-btn-End
+=-=-=-=-=-=- 
+ */
+  
+  /* Error Message Span */
+  form span {
+    color: red;
+    font-size: 0.85rem;
+    display: block;
+    margin-top: 5px;
+  }
+  
+  /* Submit Button */
+  form input[type="submit"] {
+    background-color: #2d572c;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+  
+  form input[type="submit"]:hover {
+    background-color: #246b23; /* Darker green on hover */
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    form {
+      margin: 20px;
+      padding: 30px;
+    }
+  
+    h1 {
+      font-size: 1.5rem;
+    }
+  
+    form table {
+      border-spacing: 8px;
+    }
+  
+    form input[type="submit"] {
+      font-size: 0.9rem;
+      padding: 10px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    h1 {
+      font-size: 1.2rem;
+    }
+  
+    form {
+      padding: 20px;
+    }
+  }
+  

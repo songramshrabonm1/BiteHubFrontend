@@ -1,0 +1,371 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+/* 
+/* >>>>>>>>>>>>>>Font-style<<<<<<<<<<<<<<<<< */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&family=Roboto:wght@500&display=swap');
+
+/* >>>>>>>>>>>>>>Font-style<<<<<<<<<<<<<<<<< */
+/* ============variable-define-start============ */
+:root{
+    --primary-color:#ffbc04 ;
+    --secondar-color:#1E8449;
+    --white-color:#FDFEFE;
+    --black-color:#1C2833;
+    --red-color : #ff1504;
+    --navBtn-color : #C4FF88;
+    /* --navBtn-color : #edf7e4; */
+    --secondary-font:  'Quicksand', sans-serif;
+    --primary-font: 'Roboto', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+body{
+    font-family: var(--primary-font);
+}
+/* ============variable-define-end============ */
+
+/* --------------Custom-scroll-bar------------- */
+/* ::-webkit-scrollbar{
+    width: 0.625rem;
+}
+::-webkit-scrollbar-track{
+    background-color: var(--white-color);
+}
+::-webkit-scrollbar-thumb{
+    background-color: var(--secondar-color);
+} */
+/* --------------Custom-scroll-bar------------- */
+
+/* ///////////Custom-css\\\\\\\\\\\\\ */
+h1{
+    color: var(--white-color);
+}
+span{
+    color: #ffcc00;
+}
+p{
+    color: var(--black-color);
+}
+/* ///////////Custom-css\\\\\\\\\\\\\ */
+
+
+/* ============******=========== */
+/*Navigation css style start
+============******===========
+*/
+.nav-img{
+    width: auto;
+    height: 2rem;
+}
+
+.home{
+    background: url(./Pizza-images/images/bg/bg-1.jpg) no-repeat center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+.navigation-wrap.scroll-on .nav-link{
+    color: var(--white-color);
+}
+.nav-link:hover,.nav-link.active{
+    border: 1px solid var(--secondar-color);
+    border-radius: 5px;
+    background-color: var(--navBtn-color) !important;
+    transition: all 1s ease-in-out 0s;
+}
+
+.navigation-wrap.scroll-on.nav-link:hover,
+.navigation-wrap.scroll-on.nav-link.active{
+  color: var(--primary-color);
+}
+/* 
+
+============*******==========
+Navigation css style End
+============*******==========
+*/
+
+
+/* *******SEction 1 style slider 3 image********** */
+.top-banner{
+    background: url(./Pizza-images/images/bg/bg-1.jpg) no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.TopBanner2{
+    background: url(./Pizza-images/images/bg/pexels-valeriya-1639562.jpg) no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+.Top-banner3{
+    background: url(./Pizza-images/images/bg/image\ copy\ 8.png) no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+/* *******SEction 1 style********** */
+
+/*
+============
+main-btn start
+=-=-=-=-=-=- 
+ */
+ .nav-btn{
+    background-color: var(--navBtn-color);
+    color: var(--black-color);
+    width: fit-content;
+    border: 2px solid var(--secondar-color);
+    padding: 0.343px 0.893rem;
+    border-radius: 0.594rem;
+    text-transform: capitalize;
+    line-height: 2rem;
+
+    transition: all 1s ease-in-out 0s;/* transition 4 property transition transform, transition duration , transition delay */
+ }
+ .nav-btn:hover{
+    background-color: transparent;
+    color: var(--secondar-color);
+ }
+.main-btn{
+    background-color: var(--primary-color);
+    color: var(--black-color);
+    width: fit-content;
+    border: 2px solid var(--primary-color)   ;
+    padding:0.323px 0.893rem ;
+    border-radius: 0.594rem;
+    line-height: 2rem;
+    text-transform: capitalize;
+    transition: all 1s ease-in-out 0s;
+    
+}
+.main-btn:hover{
+    background-color: transparent;
+    color: var(--primary-color);
+    
+}
+
+
+/*
+============
+main-btn-End
+=-=-=-=-=-=- 
+ */
+
+ 
+ /* ((((((((((((((((((((OUR-MENU-STYLE-start))))))))))))))))))))))) */
+.link-category-product img{
+        transition: all 2s ease-in-out;
+ }
+.link-category-product:hover img{
+    transform: scale(1.2);
+}
+ /* ((((((((((((((((((((OUR-MENU-STYLE-end))))))))))))))))))))))) */
+
+
+
+ 
+/* font-style-color-start */
+.fa-solid{
+    color: var(--primary-color);
+}
+/* font-style-color-end */
+/* -=-=-=-=-card-border-box-=-=-=-=-=- */
+.boxx{
+    box-shadow: 2px 4px 10px gray;
+
+
+
+    flex-direction: column; /* Ensure items stack vertically */
+    justify-content: space-between; /* Space between elements ensures layout consistency */
+    height: 100%; /* Ensures uniform height */
+}
+.scaless{
+    height: 250px; /* Set a consistent height for all images */
+    width: 100%; /* Full width of the card */
+    /* overflow: hidden; */
+    border-radius: 15px;
+}
+.scaless img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures image scales proportionally */
+    display: block;
+    transition: transform 2s ease-in-out 0s;
+    overflow: hidden;
+}
+.scaless:hover img{
+    transform: scale(1.1);
+}
+
+.card-body {
+    flex-grow: 1; /* Ensures the body grows to fill space evenly */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* Equal spacing for content */
+}
+
+
+
+
+/* -=-=-=-=-card-border-box-=-=-=-=-=- */
+/* *********
+carosel part start
+************ */
+
+
+/* *********
+Carosel-part-end
+************ */
+
+
+/* ^^^^^^^^^^^^^social media icon-part-start^^^^^^^^^^^^ */
+.iconn>p>i{
+    transition: all 2s ease-in-out;
+    font-size: 2rem;
+}
+.iconn>p:hover i{
+    transform: scale(1.6);
+    color: var(--primary-color);
+}
+.newsletter .main-btn{
+    background-color: var(--white-color);
+    border: #FDFEFE;
+}
+.newsletter:hover .form-control{
+    background-color: var(--primary-color);
+}
+.newsletter:hover .main-btn{
+    background-color: var(--primary-color);
+}
+.newsletter:hover.form-control,.newletter:focus{
+    box-shadow: none;
+    border-color: var(--primary-color);
+}
+/* ^^^^^^^^^^^^^social media -part-start^^^^^^^^^^^^ */
+
+/* **************Footer Part Start  *****************/
+footer {
+    position: sticky;
+    width: 100%;
+    bottom: 0;
+    box-sizing: border-box;
+  }
+  
+/* **************Footer Part Start ***************** */
+.carText{
+    /* style="font-size: 4rem; font-weight: 600; font-family:Georgia, 'Times New Roman', Times, serif;" */
+    font-size: 4rem;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.thumbileH1{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    /* font-size: 3rem; */
+}
+/* *********************THUMBILE SECTION START***************** */
+#Thumabile{
+    background-image: url(./Pizza-images/images/bg/image\ copy\ 10.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+/* *********************THUMBILE SECTION end***************** */
+
+
+/**************** Tiffine Catering start ************ */
+
+/* Tiffin services carddd start*/
+/* class="tiffinCard" */
+.tiffinCard{
+    width: 18rem;
+}
+.tiffinCard:hover{
+    transform: scale(1.03);
+    transition: all 1s ease-in;
+}
+/* Tiffin services carddd End*/
+/* Make Image Responsive */
+/* Colors */
+
+
+img.object-cover {
+    object-fit: cover;
+}
+/* Adjust image position */
+.custom-image {
+    position: relative;
+    top: -3rem; /* Move the image upward by 20px */
+    z-index: 0; /* Ensure the image stays above other elements */
+}
+/**************** Tiffine Catering end ************ */
+/* *******OUR MENU CARD SECTION START******** */
+.cardd{
+    display: flex;
+}
+/* *******OUR MENU CARD SECTION End******** */
+/* **************MISSION VISION PART start ************** */
+
+/* **************MISSION VISION PART End ************** */
+
+/* (((((SERVICES SECTION START))))) */
+#servicess{
+    display: flex;
+    justify-content: space-between;
+}
+/* (((((SERVICES SECTION END))))) */
+@media  (max-width: 576px) {
+  
+    /* .cardd{
+        flex-direction: column;
+    } */
+    .carText{
+        font-size: 2rem;
+    }
+  
+    .iconn{
+        flex-direction: column;
+    }
+    .responsiveText{
+        /* font-size: 0.5rem; */
+        word-break: break-word;
+        white-space: normal;
+    }
+   
+}
+@media (max-width : 430px){
+    .cardd{
+        flex-direction: column;
+    }
+    #quickk{
+        word-break: break-all;
+    }
+    #experienced{
+        word-break: break-all;
+    }
+    #servicess{
+        flex-direction: column;
+    }
+    
+
+}
+
+@media (max-width: 300px){
+    .tiffinCard{
+        width: 10rem;
+    }
+}

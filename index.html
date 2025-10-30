@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+              <!--(((((((((((Font-awesome-icon-style-link))))))))))))  -->
+              <script src="https://kit.fontawesome.com/6cab9874b2.js" crossorigin="anonymous"></script>
+              <!--(((((((((((((((((Font-awesome-icon-style-link)))))))))))))))))  -->
+
+                <!-- ..............Own css.............. -->
+                  <link rel="stylesheet" href="style.css">
+                <!-- ..............Own css.............. -->
+
+
+                <!-- ************* Aos library link start************* -->
+                <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+                <!-- ************* Aos library link end ************* -->
+
+                
+              <!-- ///////////Bootstrap cdn link\\\\\\\\\\ -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+              <!-- ///////////Bootstrap cdn link\\\\\\\\\\ -->
+
+
+    <style>
+.food-menu {
+  background-color: #004B1A; 
+}
+.cardd:hover{ /* এখানে যদি আমি একটা স্পেস ব্যবহার করে ফেলি আমার এই হভার  টা  গিয়ে পড়বে তার চাইল্ড element এর উপরে */
+  transform : scale(1.02); /*জুম হবে।*/
+  transition : transform 0.5s ease-in-out;
+}
+.custom-card-image {
+  width: 250px; 
+  height: 250px;
+  object-fit: cover; /* ইমেজটি সুন্দরভাবে ফিট হবে */
+  border-radius: 8px; 
+}
+
+
+
+
+
+    </style>
+</head>
+<body data-bs-spy="scroll" data-bs-target=".navbar"data-bs-offset="100">
+
+                  <!--********Navigation part start******  -->
+
+                  <nav class="navbar navbar-expand-lg fixed-top navigation-wrap" style="background-color: #F9F2E6;">
+                    <div class="container-fluid px-5">
+                      <a class="navbar-brand" href="index.html">
+                        <img class="nav-img" src="./Pizza-images/images/bg/image copy 9.png" alt="">
+                      </a>
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                          <li class="nav-item pe-3">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                          </li>
+                          <li class="nav-item pe-3" >
+                            <a class="nav-link " aria-current="page" href="foodMenu.html">Food-Menu</a>
+                          </li>
+                          <li class="nav-item pe-3">
+                            <a class="nav-link " aria-current="page" href="tiffinService.html">Tiffin Service</a>
+                          </li>
+                          <li class="nav-item pe-3">
+                            <a class="nav-link " href="about.html">About-Us</a>
+                          </li>
+                      
+                          <li class="nav-item pe-3" >
+                            <a class="nav-link" href="review.html">Review</a>
+                          </li>
+                          <li class="nav-item pe-3">
+                              <a class="nav-link" href="cart.html">Cart 
+                                <i class="fa-solid fa-cart-shopping"></i>
+                            </a>
+                          </li>
+
+                          <li class="nav-item pe-3">
+                            <a href="loginpage.html">
+                              <button class="nav-btn" >Account</button>
+
+                            </a>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+                  
+                  <!--********Navigation part End********  -->
+                 
+               <!-- **************Section-1 top-banner************** -->
+
+<div id="carouselExampleFade" class="carousel slide carousel-fade " data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <section id="home">
+        <div class="container-fluid Top-banner3">
+          <div class="title container" data-aos="fade-right" data-aos-duration="1200">
+            <p class="text-light"> <small>Start Order Only 150 tk</small></p>
+            <h1 class="carText" ><span> Delicious Dishes </span> <br> To Enrich Your Wish .</h1>
+            <p class="text-light"> <small>Order Your Most Favourite Best Food Dishes Today</small></p>
+            <div><button class="main-btn">Order Now <i class="fa-solid fa-basket-shopping"></i></button></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section id="home">
+        <div class="container-fluid TopBanner2">
+          <div class="title container" data-aos="fade-right"  data-aos-duration="1000" >
+            <p class="text-light"> <small>Start Order Burger Just Only 200 tk</small></p>
+            <h1 class="text-light carText"><span> Flavorful Bites </span> To <br> Enrich Your Day</h1>
+            <p class="text-white"><small>Our selection of flavorful bites is crafted to brighten your day and satisfy your cravings.</small></p>
+            <div><button class="main-btn">Order Now <i class="fa-solid fa-basket-shopping"></i></button></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div class="carousel-item">
+      <section id="home">
+        <div class="container-fluid top-banner">
+          <div class="title container" data-aos="fade-right">
+            <p><small>Start Order Pizza Just Only 450 tk</small></p>
+            <h1 class="text-light carText">UNLIMITED <br> MEDIUM <span>PIZZAS</span></h1>
+            <p class="text-light"> <small>Additional Charge for Premium toppings. Minimum of 2 required.</small></p>
+            <div><button class="main-btn">Order Now <i class="fa-solid fa-basket-shopping"></i></button></div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+               <!-- **************Section-1 top-banner End**************** -->
+
+
+               <section class="container py-5">
+                <div class="row">
+                  <div class="col-lg-6 col-sm-12 col-12 g-4" data-aos="fade-right">
+                    <img src="./Pizza-images/images/biriyani/Screenshot 2024-11-24 at 12.28.53 AM.png" class="img-fluid" alt="">
+                  </div>
+                  <div class="col-lg-6 col-sm-12 col-12">
+                    <div class="pt-5 mt-5" style="display: flex; flex-direction: column; justify-content: center; align-items: start;">
+
+                      <h1 class="text-dark">Fresh Home Food <b> Delivered At Your </b> Door step</h1>
+                      <p><small>We believe that everyone deserves delicious, wholesome food without the hassle of cooking. Our Tiffin service brings you the essence of home cooking, using only the freshest ingredients and authentic recipes.</small></p>
+                  
+                      <div class="row w-100">
+                        <div class="col-4 col-lg-4 col-md-4">
+                          <button id="missinbtn" style="border: 0px none white; background: white; ">
+                            
+                            <p class="mb-1">Our Mission</p>
+                          </button>
+
+            
+                        </div>
+                        <div class="col-4 col-lg-4 col-md-4">
+                          <button id="visionbtn" style="border: 0px none white; background: white; ">
+
+                            <p class="mb-1">Our Vision</p>
+                          </button>
+                        </div>
+                        <div class="col-4 col-lg-4 col-md-4">
+                          <button id="targetbtn" style="border: 0px none white; background: white; ">
+                            <p class="mb-1">Our Target</p>
+
+                          </button>
+
+                        </div>
+                      </div>
+<!-- Mission Click View Start -->
+                      <div class="row w-100" id="missionView" style="display: none;">
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <img src="./Pizza-images/missionVissionPic/tab-img01.jpg" class="img-fluid" alt="">
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <p><small> Quality Ingredients </small>  </p>
+                          <ul>
+                            <p>1. Creamy texture and healthy fats.</p>
+                            <p>
+                              2. Crisp and refreshing for added crunch.
+                            </p>
+                            <p>
+                             3. High-quality oil for a rich dressing.
+                            </p>
+                          </ul>
+                        </div>
+                        <p><small>Our talented chefs prepare a variety of mouthwatering dishes that cater to diverse tastes and dietary needs. From hearty curries and fragrant rice.
+
+                      </div>
+<!-- Mission Click View End -->
+ <!-- Vission Click View Start -->
+                      <div class="row w-100" id="visionView" style="display: none;">
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <img src="./Pizza-images/missionVissionPic/tab-img02.jpg" class="img-fluid" alt="">
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <p><small> Quality Ingredients </small></p>
+                          <ul>
+                            <p>1. Aromatic and fragrant, enhances flavor.                            </p>
+                            <p>
+                              2. Aged for depth and richness.
+                            </p>
+                            <p>
+                             3. Enhances all the natural flavors.
+                            </p>
+                          </ul>
+                        </div>
+                        <p><small>Our talented chefs prepare a variety of mouthwatering dishes that cater to diverse tastes and dietary needs. From hearty curries and fragrant rice.
+
+                        </small></p>
+                      </div>
+<!-- Vision Click View End -->
+ <!-- Target View Start -->
+                      <div class="row w-100" id="targetShow" style="display: flex;">
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <img src="./Pizza-images/missionVissionPic/tab-img03.jpg" class="img-fluid" alt="">
+
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-12">
+                          <p><small> Quality Ingredients </small> </p>
+                          <ul>
+                            <p>1. Natural sweetness with a hint of caramel.                            </p>
+                            <p>
+                              2. Rich and aromatic for enhanced flavor.
+                            </p>
+                            <p>
+                             3. High-quality eggs for moisture and structure.
+                            </p>
+                          </ul>
+                        </div>
+                        <p><small>Our talented chefs prepare a variety of mouthwatering dishes that cater to diverse tastes and dietary needs. From hearty curries and fragrant rice.
+
+                      </div>
+    <!-- Target View End -->
+                    </div>
+                  </div>
+                </div>
+              </section>
+
+
+              <!-- MISSION PART END  -->
+
+
+
+             
+              
+               <!-- **************Section-2 start****************** -->
+
+
+
+
+
+<section id="Menu">
+
+<div class="container my-5">
+  <h2 class="text-center text-success our-menu" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; font-weight: 600;">Our Menu</h2>
+  <hr class="mx-5 mb-5">
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6  col-8">
+      <div class="card border-0 link-category-product">
+        <div class="card-image d-flex justify-content-center ">
+          <a href="pizza.html">
+            <img class="img-fulid" src="./Pizza-images/images/img/category1.png" alt="">
+          </a> 
+        </div>
+        <div class="card-title">
+          <p class="text-center">PIZZA</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-8">
+      <div class="card border-0">
+        <div class="card-image d-flex justify-content-center link-category-product">
+          <a href="combo.html">
+            <img class="img-fulid" src="./Pizza-images/images/img/category3.png" alt="">
+          </a>
+        </div>
+        <div class="card-title">
+          <p class="text-center">COMBO</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-8">
+      <div class="card border-0">
+        <div class="card-image d-flex justify-content-center link-category-product">
+          <a href="kidsTitle.html">
+            <img class="img-fulid" src="./Pizza-images/images/img/category4.png" alt="">
+          </a>
+        </div>
+        <div class="card-title">
+          <p class="text-center pb-1">KIDS MENUS</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 col-8">
+      <div class="card border-0">
+        <div class="card-image d-flex justify-content-center ">
+          <a class="link-category-product" href="chicken.html">
+            <img class="img-fulid" src="./Pizza-images/images/img/category5.png" alt="">
+          </a>
+        </div>
+        <div class="card-title">
+          <p class="text-center pb-3">CHICKEN</p>
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+  <a href="foodMenu.html" class="d-flex justify-content-end" style="text-decoration: none;" >
+    <button class="main-btn">See all...</button>
+  </a>
+</div>
+</section>
+               <!-- **********Our-Menu-Section-2 end*************** -->
+
+
+
+               <!-- *********************  Discover Our Food Menu Section START ******************** -->
+
+               <section class="food-menu py-5 container-fluid">
+                <div class="container text-center">
+                  <h1 class="text-white mb-5" style="font-family: 'Courier New', Courier, monospace; font-style: normal; font-size: xx-large;  font-weight: 600;">Discover Our Food Menu</h1>
+                  <hr>
+                  <div class="row g-4">
+                    <!-- Card 1 -->
+                    <div class="col-md-12 col-lg-6 col-12 col-sm-12" data-aos="fade-right">
+                      <div class=" p-2 cardd" style="border: 1px solid #dadada; background: #F9F2E6; border-radius: 10px;">
+                        <img src="./Pizza-images/images/img/cocunutFishCurryWithWhiteRice.jpg" alt="Coconut Fish Curry" class="img-fluid custom-card-image rounded">
+                        <div class="title ps-4 " style="display: flex; flex-direction: column; justify-content: center; align-items: start;">
+                          <h5 class="cardtext" style="font-family: 'Courier New', Courier, monospace;"> <b> Coconut Fish Curry </b></h5>
+                          <p style="text-align: start; font-weight: 100;" class="pt-2"> <small>
+
+                            Coconut Fish Curry is a vibrant and aromatic dish that combines tender fish fillets with a rich,...
+                          </small>
+                          </p>
+                          <a href="#" class="text-danger" style="text-decoration: none;" > <u> <small> Order Now!  </small> </u></a>
+                        </div>
+                      </div>
+
+                      
+                      
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-12 col-lg-6 col-12 col-sm-12" data-aos="fade-left">
+                      
+                      <div class="d-flex p-2 cardd" style="border: 1px solid #dadada; background: #F9F2E6; border-radius: 10px;">
+                        <img src="./Pizza-images/images/biriyani/classicVegBeriyani.jpg" alt="Coconut Fish Curry" class="img-fluid custom-card-image rounded">
+                        <div class="title ps-4 " style="display: flex; flex-direction: column; justify-content: center; align-items: start;">
+                          <h5 class="cardtext" style="font-family: 'Courier New', Courier, monospace;"><b> Delicious Biryani </b></h5>
+                          <p style="text-align: start; font-weight: 100;" class="pt-2"> <small>
+
+                            Delicious Biryani is a fragrant and flavorful rice dish that beautifully layers marinated meat—usually
+                            </small>
+                          </p>
+                          <a href="#" class="text-danger" style="text-decoration: none;" > <u> <small> Order Now!  </small> </u></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-12 col-lg-6 col-12 col-sm-12" data-aos="fade-right">
+                    
+                      <div class="d-flex p-2 cardd" style="border: 1px solid #dadada; background: #F9F2E6; border-radius: 10px;">
+                        <img src="./Pizza-images/chicken/foodmenu-03.jpg" alt="Coconut Fish Curry" class="img-fluid custom-card-image rounded">
+                        <div class="title ps-4 " style="display: flex; flex-direction: column; justify-content: center; align-items: start;">
+                          <h5 class="cardtext" style="font-family: 'Courier New', Courier, monospace;"><b>Classic Butter Chicken </b></h5>
+
+                          <p style="text-align: start; font-weight: 100;" class="pt-2"> <small>
+
+                            Chicken is a beloved Indian dish known for its rich, creamy tomato-based sauce and tender,
+                          </small>
+                          </p>
+                          <a href="#" class="text-danger" style="text-decoration: none;" > <u> <small> Order Now!  </small> </u></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 4 -->
+                    <div class="col-md-12 col-lg-6 col-12 col-sm-12" data-aos="fade-left">
+                      
+                      <div class="d-flex p-2 cardd" style="border: 1px solid #dadada; background: #F9F2E6; border-radius: 10px;">
+                        <img src="./Pizza-images/tiffin/image.png" alt="Coconut Fish Curry" class="img-fluid custom-card-image rounded">
+                        <div class="title ps-4 " style="display: flex; flex-direction: column; justify-content: center; align-items: start;">
+                          <h5 class="cardtext" style="font-family: 'Courier New', Courier, monospace;"> <b>	
+                            Full Dish Tiffin</b></h5>
+                              <p style="text-align: start; font-weight: 100;" class="pt-2"> <small>
+          
+                                A Full Dish Tiffin is a delightful meal packed with variety and flavor, perfect for those seeking a  </small>                              
+                          </p>
+                          <a href="#" class="text-danger" style="text-decoration: none;" > <u> <small> Order Now!  </small> </u></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 5 -->
+                    <div class="col-md-12 col-lg-6 col-sm-12 col-12" data-aos="fade-right">
+                      
+                      <div class="d-flex p-2 cardd" style="border: 1px solid #dadada; background: #F9F2E6; border-radius: 10px;">
+                        <img src="./Pizza-images/images/biriyani/image.png" alt="Coconut Fish Curry" class="img-fluid custom-card-image rounded">
+                        <div class="title ps-4 " style="display: flex; flex-direction: column; justify-content: center; align-items: start;">
+                          <h5 class="cardtext" style="font-family: 'Courier New', Courier, monospace;"> <b>	
+                            Southwest Biriyani</b></h5>
+                              <p style="text-align: start; font-weight: 100;" class="pt-2"> <small>
+          
+                                Southwest Biriyan is a vibrant and hearty dish that captures the bold flavors of the Hydrabadi </small>                          </p>
+                          <a href="#" class="text-danger" style="text-decoration: none;" > <u> <small> Order Now!  </small> </u></a>
+                        </div>
+                      </div>
+                    </div>
+                    <!-- Card 6 -->
+                    <div class="col-md-12 col-lg-6 col-sm-12 col-12" data-aos="fade-left">
+                     
+                      <div class="d-flex p-2 cardd" style="border: 1px solid #dadada; background: #F9F2E6; border-radius: 10px;">
+                        <img src="./Pizza-images/images/biriyani/image copy 2.png" alt="Coconut Fish Curry" class="img-fluid custom-card-image rounded">
+                        <div class="title ps-4 " style="display: flex; flex-direction: column; justify-content: center; align-items: start;">
+                          <h5 class="cardtext" style="font-family: 'Courier New', Courier, monospace;"> <b>	
+                            A single platter</b></h5>
+                              <p style="text-align: start; font-weight: 100;" class="pt-2"> <small>
+          
+                                Mutton With Fried Rice is a comforting and flavorful dish that brings together al dente pasta with a rich sauce</small>                          </p>
+                          <a href="#" class="text-danger" style="text-decoration: none;" > <u> <small> Order Now!  </small> </u></a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+              
+               <!-- ********************* Discover Our Food Menu Section End ******************** -->
+
+                <!--********************Tiffin section Start **********************  -->
+                <div class="container-fluid py-5 my-5 " style="background-color: #F9F2E6;">
+                  <div class="pb-5 mb-5">
+                    
+                    <h1 class="text-center text-dark pb-5" style="font-family: Georgia, 'Times New Roman', Times, serif;">Dedicated <b> Tiffin & Catering </b> Services</h1> 
+                    
+                    <div  class="d-flex justify-content-center align-items-center pb-5">
+
+                      <div class="row g-3">
+                        <div class="col-12 col-lg-4 col-md-6 col-sm-12 gx-2" data-aos="fade-right">
+                          <div class="card tiffinCard">
+                            <img src="./Pizza-images/tiffin/tiffin2.jpg"  class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="font-family:'Times New Roman', Times, serif;">Tiffin Services</h5>
+                              <p class="card-text">We believe that everyone deserves the taste of home, no matter how busy life gets. Our tiffin service offers freshly prepared, nutritious</p>
+                              <a href="#" style="text-decoration: none; color: green;"><small>Explore Our Tiffin Service</small></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-6 col-sm-12" data-aos="fade-up">
+                          <div class="card tiffinCard" >
+                            <img src="./Pizza-images/tiffin/image.png" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="font-family:'Times New Roman', Times, serif;">Child School Tiffin</h5>
+                              <p class="card-text">We understand the importance of providing healthy, balanced meals for growing children. Our Child Nutrition Tiffin Service is designed tasty. </p>
+                              <a href="#" style="text-decoration: none; color: green;"><small>Explore Our Tiffin Service</small> </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-lg-4 col-md-6 col-sm-12" data-aos="fade-left">
+                          <div class="card tiffinCard " >
+                            <img src="./Pizza-images/tiffin/s03.jpg" class="card-img-top img-fluid" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title" style="font-family:'Times New Roman', Times, serif;" >Launch Time</h5>
+                              <p class="card-text">Specialize in providing exceptional Launch Time Tiffin services . We provide healthy and tasty meals for you . we care about our customer health.  </p>
+                              <a href="#" style="text-decoration: none; color: green;"> <small>Explore Our Tiffin Service</small> </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+                  <div class="row" style="background-color: #004B1A;">
+                    <!-- Left Section -->
+                    <div class="col-0 col-lg-1 col-md-1"></div>
+                    <div class="gx-5 col-md-5 col-lg-5 col-12  text-light d-flex flex-column justify-content-center p-5" data-aos="slide-up" data-aos-duration="1400">
+                      <h1 class="mb-4">HomeStyle Tiffins Bringing Family Recipes To You</h1>
+                      <div class="mb-4">
+                        <h4 class="d-flex align-items-center px-2" id="quickk">
+                          Quick 
+                          
+                          <i class="fa-solid fa-rocket px-2" style="color: #14b56f;"></i>
+                          
+                          Response
+                        </h4>
+                        <p class="text-light">We pride ourselves on our prompt communication, ensuring that you receive the support you need when you need it.</p>
+                      </div>
+                      <div>
+                        <h4 class="d-flex align-items-center" id="experienced">
+                          Experienced 
+                          <i class="fa-solid fa-person px-2"  style="color: #14b56f;"></i>
+                          Team
+                        </h4>
+                        <p class="text-light">Our experienced team is at the heart of everything we do. Comprised of skilled chefs and dedicated food enthusiasts.</p>
+                      </div>
+                    </div>
+                    
+                    <!-- Right Section -->
+                    <div class="col-12 col-md-6 col-lg-6 position-relative pe-5">
+                      <img src="right-img1.jpg" alt="Food" class="img-fluid w-100 h-80 object-cover custom-image">
+                      
+                    </div>
+                    <!-- <div class="col-md-1 col-lg-1"></div> -->
+                    
+                  </div>
+                </div>
+                
+                
+                
+                
+                <!--********************Tiffin section END **********************  -->
+
+
+                          <!-- ***////***Popular-food-section-start***\\\\ -->
+
+
+            <!-- ***////***Explore-food-section-start***\\\\ -->
+
+          
+
+     <!-- Get in Touch section start -->
+  <section class="my-5 py-5" style="background-color: #F9F2E6;">
+
+      
+  <h1 class="text-center text-success" style="font-family: 'Courier New', Courier, monospace; font-size: 50px; font-style: normal; font-weight: 600;">Get In Touch</h1>
+  <p class="text-center">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat <br> dolor. Purus urna in sit nullam proin. </p>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12 col-lg-6 col-12" data-aos="fade-right" data-aos-duration="1500">
+
+        <div class="all_info">
+          <div class="row-3 p-3">
+            <div class="col" >
+              <div class="info-content p-3 rounded-3" style="background-color: #466711;">
+                <img src="./Pizza-images/images/img/Group 1171275317.png" class="img-fluid" alt="">
+                <p><small>Phone Number</small></p>
+                <h3>(+62) 123-321-543</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-3 p-3">
+            <div class="col" >
+              <div class="info-content p-3 rounded-3" style="background-color:#8e5c1a;">
+              <img src="./Pizza-images/images/img/Group 1171275318.png" class="img-fluid" alt="">
+              <p><small>Email</small></p>
+              <h3 class="responsiveText">Foodys@support.com</h3>
+              </div>
+            </div>
+          </div>
+          <div class="row-3 p-3">
+            <div class="col">
+              <div class="info-content p-3 rounded-3" style="background-color: rgb(172, 40, 58);">
+                <img src="./Pizza-images/images/img/Group 1171275321.png" class="img-fluid" alt="">
+                <p><small>Location</small></p>
+                <h3 class="responsiveText">152/1 Mohakhali Wireless Gate</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        
+
+      </div>
+      <div class="col-md-12 col-lg-6 col-12" data-aos="fade-left">
+        <div class="row">
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label"><h3>Enter Your Name</h3></label>
+            <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Name" style="height: 64px;">
+
+          </div>
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label" ><h3>Your Email</h3></label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your email" style="height: 64px;">
+          </div>
+        </div>
+        <div class="row mt-4">
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label"><h3>Subject</h3></label>
+              <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Subject" style="height: 64px; ">
+          </div>
+          <div class="col">
+            <label for="exampleFormControlInput1" class="form-label"><h3>Phone Number</h3>            </label>
+              <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter Your Phone Number" style="height: 64px; ">
+          </div>
+        </div>
+        <div class="row pb-3">
+
+        <label for="exampleFormControlTextarea1" class="form-label"><h3>Message</h3></label>
+        <textarea class="form-control"  id="exampleFormControlTextarea1" rows="9" placeholder="Write Your Message"></textarea>        
+        
+      </div>
+      <div class="row">
+
+        <button type="button" class="btn btn-danger">Send Message</button>
+      </div>
+        
+      </div>
+    </div>
+  </div>
+
+</section>
+  
+              <section class="container-fluid my-5" id="Thumabile">
+                <div class="container h-100 d-flex flex-column justify-content-center text-light">
+                  <div class="row">
+                    <!-- Text Content -->
+                    <div class="col-lg-8 col-md-10 col-12" data-aos="zoom-in">
+                      <!-- <h1 class="fw-bold text-start thumbileH1 display-4"  >
+                        Plan Your Next Meal <br> Event With Us
+                      </h1> -->
+                      <h1 class="fw-bold text-start thumbileH1 display-5 fs-1 fs-md-2 fs-sm-1 ">
+                        Plan Your Next Meal <br> Event With Us
+                      </h1>
+                      
+                      <p class="text-start text-light">
+                        <small>
+                          The simplicity of homemade goodness with our Tiffin deliveries, where every meal is prepared
+                          with care & authenticity.
+                        </small>
+                      </p>
+                      <!-- <button class="nav-btn ">GET IN TOUCH WITH US</button> -->
+                    </div>
+                  </div>
+                </div>
+              </section>
+              
+            
+                 <!-- ********************** Thumabile section End ************************** -->
+  
+
+    <!-- Get in Touch section end -->
+
+
+     <!-- Social Media section -->
+     <section class="mt-5 mb-5 p-3 container-fluid" style="background-color: #F9F2E6; border: 1px solid #dadada; border-radius: 10px;" >
+      <h1 class="text-center text-success">Social Media</h1>
+    
+      <div class="mt-5 d-flex justify-content-center iconn">
+        <p class="px-2 text-danger"><i class="fa-brands fa-facebook"></i></p>
+        <p class="px-2 text-danger"><i class="fa-brands fa-instalod"></i></p>
+        <p class="px-2 text-danger"><i class="fa-brands fa-twitter"></i></p>
+        <p class="px-2 text-danger"><i class="fa-brands fa-youtube"></i></p>
+        <p class="px-2 text-danger"><i class="fa-brands fa-linkedin"></i></p>
+        <p class="px-2 text-danger"><i class="fa-brands fa-instagram"></i></p>
+      </div>
+      
+    </section>
+    <!-- Social Media section -->
+
+
+
+            <!-- >>>>>>>>>Footer<<<<<<<<<< -->
+
+<footer class="container-fluid">
+<div class="row bg-dark">
+  <div class="col-lg-6 col-md-4 ms-auto">
+  </div>
+  <p class="text-center text-light pt-2"> <small>	&#169;2028, PIZZA All rights reserved.</small></p>
+</div>
+
+</footer>
+            <!-- >>>>>>>Footer<<<<<<<<<< -->
+
+                           <!--/////// script link \\\\\\\-->
+    <script src="javascript/missionVissionShow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+                      <!-- AOS LIBRARY LINK START -->
+                      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+                      <script>
+                        AOS.init({
+                          offset : 500 ,
+                          duration : 1200,
+                        });
+                      </script>
+                      <!-- AOS LIBRARY LINK END -->
+    <!--////// script link \\\\\\\\-->
+</body>
+</html>

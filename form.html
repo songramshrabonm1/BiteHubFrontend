@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+       <!-- Form Validation JS -->
+       <script src="form.js"></script>
+
+    <!-- Font Awesome Icon -->
+    <script src="https://kit.fontawesome.com/6cab9874b2.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    />
+
+    <!-- Custom CSS -->
+    <!-- <link rel="stylesheet" href="formstyle.css" /> -->
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+           <!--********Navigation part start******  -->
+
+           <nav class="navbar navbar-expand-lg fixed-top navigation-wrap" style="background-color: #F9F2E6;">
+            <div class="container-fluid px-5">
+              <a class="navbar-brand" href="index.html">
+                <img class="nav-img" src="./Pizza-images/images/bg/image copy 9.png" alt="">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                  <li class="nav-item pe-3">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item pe-3">
+                    <a class="nav-link " aria-current="page" href="foodMenu.html">Food-Menu</a>
+                  </li>
+                  <li class="nav-item pe-3">
+                    <a class="nav-link " aria-current="page" href="tiffinService.html">Tiffin Service</a>
+                  </li>
+                  <li class="nav-item pe-3">
+                    <a class="nav-link " href="about.html">About-Us</a>
+                  </li>
+              
+                  <li class="nav-item pe-3">
+                    <a class="nav-link" href="review.html">Review</a>
+                  </li>
+                  <li class="nav-item pe-3">
+                      <a class="nav-link" href="cart.html">Cart 
+                        <i class="fa-solid fa-cart-shopping"></i>
+                    </a>
+                  </li>
+
+                  <li class="nav-item pe-3">
+                    <a href="loginpage.html">
+                      <button class="nav-btn" >Account</button>
+
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+          
+          <!--********Navigation part End********  -->
+
+    <!-- Form Section -->
+    <div class="container pt-5 mt-5" >
+      <h1 class="text-center text-success" style="font-family: 'Courier New', Courier, monospace; font-weight: 500;">Register Here</h1>
+      <hr class="text-success pb-5">
+      <form action="index.html" method="" onsubmit="return form()" style="border: 1px solid #dadada; border-radius: 10px; padding: 35px; box-shadow: 5px 5px 30px rgb(90, 87, 87); background-color: #f9f6ef;" class="pt-5" >
+        <table class="table table-borderless">
+          <tr>
+            <td><label for="fname">First Name:</label></td>
+            <td>
+              <input type="text" name="fname" id="ifname" class="form-control" placeholder="Enter your First Name " />
+              <span id="efname" class="text-danger"></span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="lname">Last Name:</label></td>
+            <td>
+              <input type="text" name="lname" id="ilname" class="form-control" placeholder="Enter Your Last Name "/>
+              <span id="elname" class="text-danger"></span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="email">Email:</label></td>
+            <td>
+              <input type="email" name="email" id="iemail" class="form-control" placeholder="Enter Your Email" />
+              <span id="eemail" class="text-danger"></span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="mobile">Mobile:</label></td>
+            <td>
+              <input type="text" name="mob" id="imob" class="form-control" placeholder="Enter Your Email " />
+              <span id="emob" class="text-danger"></span>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="pass">Password:</label></td>
+            <td>
+              <input
+                type="password"
+                name="pass"
+                id="ipass"
+                class="form-control"
+                placeholder="Enter Password "
+                
+              />
+              <span id="epass" class="text-danger"></span>
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="text-center">
+              <input
+                type="submit"
+                name="submit"
+                id="btn"
+                class="btn nav-btn w-100"
+                value="Register"
+              />
+            </td>
+          </tr>
+          <tr>
+            <td colspan="2" class="text-center">
+              <a
+                href="loginpage.html"
+                class="login-link"
+                style="text-decoration: none; color: black;"
+                >Already have an account? Login here</a
+              >
+            </td>
+          </tr>
+        </table>
+      </form>
+      
+    </div>
+
+
+  
+
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- <script>
+      if(onsubmit == true){
+      
+      }
+    </script> -->
+ 
+  </body>
+</html>

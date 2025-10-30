@@ -1,0 +1,63 @@
+/* Review Section Styling */
+#reviews {
+    background-color: #f8f9fa;
+    padding: 40px 15px;
+  }
+  
+  #reviews h2 {
+    font-size: 2.5rem;
+  }
+  
+  .card {
+    border-radius: 10px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-title {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .card-text {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  .text-warning {
+    color: #ffc107;
+  }
+  
+  #reviewForm .form-control,
+  #reviewForm .form-select {
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  #reviewForm .btn {
+    font-size: 1.2rem;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    #reviews h2 {
+      font-size: 2rem;
+    }
+  
+    .card-title {
+      font-size: 1.3rem;
+    }
+  
+    .card-text {
+      font-size: 0.95rem;
+    }
+  
+    #reviewForm .btn {
+      font-size: 1rem;
+    }
+  }
+  
